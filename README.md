@@ -1,0 +1,1 @@
+"# technicalAnalyzer-Django" 

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<a href="{% url 'index' %}">Home</a>.
+{% load static %}
+<html>
+	<head>
+		<title>Technical Analyzer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css' %}" />
+	</head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Technical Analyzer</h1>
+					<p>A Free Technical Analysis tool for All</p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="icon fa-diamond major"></span>
+						<h2>Track your portfolio</h2>
+						<p>Login and track your portfolio and its price movements as you invest and make money</p>
+						<ul class="actions">
+							<li><a href="{%url 'login'%}" class="button big">Login</a></li>
+						</ul>
+					</section>
+
+				<!-- Items -->
+					<section class="main items">
+						<article class="item">
+							<header>
+								<a href="{%url 'vis1'%}"><img src="{%static 'images/pic01.png'%}" alt="" /></a>
+								<h3>Histogram</h3>
+							</header>
+							<p>A diagram consisting of rectangles whose area is proportional to the frequency of a variable and whose width is equal to the class interval.</p>
+							<ul class="actions">
+								<li><a href="{%url 'vis1'%}" class="button">Draw me one!</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{%url 'vis2'%}"><img src="{%static 'images/pic02.png'%}" alt="" /></a>
+								<h3>Bollinger Band</h3>
+							</header>
+							<p>Bollinger Bands is a financial trading tool that is used to define the prevailing high and low prices in a market to characterize the trading band of a financial instrument or commodity</p>
+							<ul class="actions">
+								<li><a href="{%url 'vis2'%}" class="button">Tell me More!</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{%url 'vis3'%}"><img src="{%static 'images/pic03.jpg'%}" alt="" /></a>
+								<h3>Candlestick</h3>
+							</header>
+							<p>A candlestick is a chart that displays the high, low, opening and closing prices of a security for a specific period. The wide part of the candlestick is called the "real body" and tells investors whether the closing price was higher or lower than the opening price</p>
+							<ul class="actions">
+								<li><a href="{%url 'vis3'%}" class="button">Hmm...That's Interesting!!</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="{%url 'vis4'%}"><img src="{%static 'images/pic04.jpg'%}" alt="" /></a>
+								<h3>Technical Analyzer</h3>
+							</header>
+							<p>Technical Analysis for different stocks<br />Here you can generate some results <br />
+						Based on previous data</p>
+							<ul class="actions">
+								<li><a href="{%url 'vis4'%}" class="button">Smart!! Let's do it!</a></li>
+							</ul>
+						</article>
+					</section>
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/piyushbaderia" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/piyushbaderia" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/piyushbaderia/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/baderiapiyush/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{%static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{%static 'assets/js/skel.min.js'%}"></script>
+			<script src="{%static 'assets/js/util.js'%}"></script>
+			<script src="{%static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>

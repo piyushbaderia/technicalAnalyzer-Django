@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<a href="{% url 'index' %}">Home</a>.
+{% load static %}
+<html>
+	<head>
+		<title>Technical Analyzer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css' %}" />
+	</head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Technical Analyzer</h1>
+					<p>A Free Technical Analysis tool for All</p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="icon fa-diamond major"></span>
+						<h2>Track your portfolio</h2>
+						<p>Login and track your portfolio and its price movements as you invest and make money</p>
+						<ul class="actions">
+							<li><a href="{%url 'login'%}" class="button big">Login</a></li>
+						</ul>
+					</section>
+
+				<!-- Items -->
+					<section class="main items">
+						<article class="item">
+							<header>
+								<a href="#"><img src="{%static 'images/pic01.png'%}" alt="" /></a>
+								<h3>Histogram</h3>
+							</header>
+							<p>A diagram consisting of rectangles whose area is proportional to the frequency of a variable and whose width is equal to the class interval.</p>
+							<ul class="actions">
+								<li><a href="{%url 'hist'%}" class="button">Draw me one!</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{%static 'images/pic02.png'%}" alt="" /></a>
+								<h3>Bollinger Band</h3>
+							</header>
+							<p>Bollinger Bands is a financial trading tool that is used to define the prevailing high and low prices in a market to characterize the trading band of a financial instrument or commodity</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{%static 'images/pic03.jpg'%}" alt="" /></a>
+								<h3>Candlestick</h3>
+							</header>
+							<p>A candlestick is a chart that displays the high, low, opening and closing prices of a security for a specific period. The wide part of the candlestick is called the "real body" and tells investors whether the closing price was higher or lower than the opening price</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="#"><img src="{%static 'images/pic04.jpg'%}" alt="" /></a>
+								<h3>Custom Stats</h3>
+							</header>
+							<p>A tool that can let you draw graphs for custom statistics.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</article>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="main special">
+						<h2>Technical Analysis</h2>
+						<p>Technical Analysis for different stocks<br />Here you can generate some results <br />
+						Based on previous data</p>
+						<ul class="actions">
+							<li><a href="#" class="button big">Analyze!</a></li>
+						</ul>
+					</section>
+
+				<!-- Main -->
+				<!--
+					<section id="main" class="main">
+						<header>
+							<h2>Lorem ipsum dolor</h2>
+						</header>
+						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</section>
+				-->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/piyushbaderia" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/piyushbaderia" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/piyushbaderia/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/baderiapiyush/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{%static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{%static 'assets/js/skel.min.js'%}"></script>
+			<script src="{%static 'assets/js/util.js'%}"></script>
+			<script src="{%static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>

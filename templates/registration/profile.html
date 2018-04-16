@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<a href="{% url 'index' %}">Home</a>.
+{% load static %}
+<html>
+	<head>
+		<title>Histogram</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css' %}" />
+	</head>
+
+	<body>
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Technical Analyzer</h1>
+					<p>A Free Technical Analysis tool for All</p>
+				</div>
+			</header>
+			<div id="wrapper">
+					<section id="cta" class="main special">
+						<h2>Profile</h2>
+						<p>Your portfolio looks like this!!!! <br /></p>
+                        <ul>
+                        {% for trade in trades %}
+                            <li>{{ trade }}</li>
+                        {% endfor %}
+                        </ul>
+						<ul class="actions">
+							<li><a href="{%url 'redirect6'%}" class="button big">Add New!!!</a></li>
+						</ul>
+					</section>
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/piyushbaderia" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/piyushbaderia" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/piyushbaderia/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/baderiapiyush/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+			<script src="{%static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{%static 'assets/js/skel.min.js'%}"></script>
+			<script src="{%static 'assets/js/util.js'%}"></script>
+			<script src="{%static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,3 @@
+    dict=[]
+    for tr in trades:
+        dict.append({'Stock':tr.stock,'Quantity':tr.totalQuantity,'Value':tr.value  })

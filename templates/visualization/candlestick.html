@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<a href="{% url 'index' %}">Home</a>.
+{% load static %}
+<html>
+	<head>
+		<title>Histogram </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{%static 'assets/css/main.css' %}" />
+	</head>
+
+	<body>
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Technical Analyzer</h1>
+					<p>A Free Technical Analysis tool for All</p>
+				</div>
+			</header>
+			<div id="wrapper">
+					<section id="intro" class="main">
+						<h2>CandleStick</h2>
+						<p>Here is your candlestick pattern for {{stock}}</p>
+						<ul class="actions">
+							<img src="{% get_static_prefix %}/FinalProject/env/technicalAnalyzer/static/candlestick/{{stock}}.png" alt="" />
+						</ul>
+					</section>
+
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/piyushbaderia" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/piyushbaderia" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/piyushbaderia/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/baderiapiyush/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+			<script src="{%static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{%static 'assets/js/skel.min.js'%}"></script>
+			<script src="{%static 'assets/js/util.js'%}"></script>
+			<script src="{%static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>
